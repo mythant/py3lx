@@ -1,12 +1,12 @@
-#import pandas as pd
-#import numpy as py
+import numpy as np
+import pandas as pd
 
-
-a = [1, 2, 4]
-b = a[:2]
-c = a[1:2]
-#print(a)
-#print(b)
-#print(c)
-
-print(a, b, c, "This is the temp.")
+lst = [[1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6]]
+ar = np.array(lst)
+print(lst)
+print(ar)
+print(ar.itemsize)
+print(ar.ndim)
+print(ar.T)
+print(np.reshape(ar,(6, 2)))
+print(ar.reshape(2, 6))
